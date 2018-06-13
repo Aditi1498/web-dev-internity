@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>movie counter</title>
+<style>
+ .table{
+          border:1px solid black;
+          padding:5px;
+          border-spacing:5px;
+         }
+ .left{
+       text-align:center;
+       width:100px;
+       height:150px;
+       background-color:lightgreen;
+      }
+ .mid{
+      width:300px;
+      background-color:lightgreen;
+     }
+ .xyz{
+      width:5px;
+      background-color:lightgreen; 
+     }
+ .input{
+        height:50px;
+        font-size:15px;
+        text-align:center;}
+ .poster{
+        border-style:solid;
+        height:200px;
+        width:200px;
+        text-align:center;
+        font-size:30px;
+        background-color:lightgreen;
+        }
+ .details{
+        border-style:solid;
+        height:185px;
+        width:150px;
+        text-align:center;
+        font-size:30px;
+        background-color:lightgreen;
+        }
+ 
+</style>
+<script>
+ function displaymovie(){
+            var mov=document.getElementById("posterVal").value;
+            document.getElementById("poster").innerHTML=mov;
+            if(mov=="poster 1")
+            {document.getElementById("details").innerHTML="details 1";}
+            else if(mov=="poster 2")
+            {document.getElementById("details").innerHTML="details 2";}
+            else if(mov=="poster 3")
+            {document.getElementById("details").innerHTML="details 3";}
+    }
+ </script>
+</head>
+<body>
+ <div class="l">
+ <table class="table" style="width:100%"
+        bgcolor="red"
+        text-align="center">
+  <tr><td class="left" bgcolor="red"><h1>ADITI SAXENA</h1></td>
+      <td class="mid"></td>
+      <td class="xyz"><h1><img src="images (1).jpeg" alt="notification" border=3 height=50 width=50 ></img></h1></td>
+      <td class="xyz"><img src="images.jpeg" alt="user image" border=3 height=100 width=100 ></img></td>
+  </tr>f k+
+  <tr height=200px><td class="left"><h2><a href="#">search link</a></h2></td>
+  <td rowspan="3" colspan="3" style="text-align:left;vertical-align:top;padding:25px" bgcolor="lightblue">
+  <table cellpadding="50px">
+  <tr>
+  <td>
+  <select class="input" id="posterVal" name="select">
+  <option>poster 1</option>
+  <option>poster 2</option>
+  <option>poster 3</option>
+  </select>
+  </td>
+  <td><select class="input" name="Type Dropdown">
+  <option value="movie">Movie</option>
+  <option value="series">Series</option>
+  <option value="episode">Episode</option>
+  </select></td>
+  <td><input class="input" type="month" placeholder="month"></td>
+  <td><button onclick="displaymovie()" class="input">Search</button>
+  <p id="demo"></p></td>
+  </tr>
+  <table cellspacing="50px">
+  <tr>
+  <td id="poster" class="poster">Poster</td>
+  <td id="details" class="details">Details</td>
+  </tr>
+  </table>
+  <tr height=200px><td class="left"><h2><a href="#">movie link</a></h2></td></tr>
+  <tr height=200px><td class="left"><h2><a href="#">form link</a></h2></td></tr>
+ </table>
+ </table>
+ </div>
+ <h2><p align="center">Veiw Movies</p></h2>
+</body>
+</html>
